@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WeatherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/loginPage', function () {
-    return view('auth.loginPage');
-});
+
+Route::get('/weather', [WeatherController::class, 'index']);
+
