@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background: #4B6F44">
-    <a class="navbar-brand disable d-flex align-items-center" href="#">
-        <span class="material-icons">
+    <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}" style="color: white">
+        <span class="material-icons" style="color:white" >
             agriculture
         </span>
         Farmer
@@ -13,10 +13,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <button class="btn btn-light active mb-2 mb-lg-0" type="button">Registration</button>
+                <a class="btn" href="{{ route('register') }}" style="background: white; color:#4B6F44; font-weight:bold">Registration</a>
             </li>
             <li class="nav-item ml-lg-2">
-                <button class="btn btn-light active" type="button">Login</button>
+                <a class="btn" href="{{ route('login') }}" style="background: white; color:#4B6F44; font-weight:bold">Login</a>
             </li>
         </ul>
     </div>

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background: #4B6F44">
-    <a class="navbar-brand disable d-flex align-items-center" href="#">
+    <a class="navbar-brand disable d-flex align-items-center" href="{{ url('/') }}" style="color: white">
         <span class="material-icons">
             agriculture
         </span>
@@ -77,10 +77,10 @@
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <button class="btn btn-light active mb-2 mb-lg-0" type="button">Profile</button>
+                <a class="btn" href="{{ url('/') }}" style="background: white; color:#4B6F44; font-weight:bold">Profile</a>
             </li>
             <li class="nav-item ml-lg-2">
-                <button class="btn btn-light active" type="button">Logout</button>
+                <a class="btn" href="{{ url('/') }}" style="background: white; color:#4B6F44; font-weight:bold">Logout</a>
             </li>
         </ul>
     </div>

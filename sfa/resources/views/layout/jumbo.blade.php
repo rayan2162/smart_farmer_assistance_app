@@ -5,7 +5,7 @@
           <hr class="my-4 text-white">
           <p class="text-white">Our Smart Farmer Assistant Application integrates advanced technology and practical tools to streamline your farm operations. From crop management to weather forecasts, we provide everything you need for a successful farming experience.</p>
           <p class="lead">
-              <a class="btn btn-lg btn-light active" href="#" role="button">Get Started</a>
+              <a class="btn btn-lg" href="{{ route('register') }}" role="button" style="background:#4B6F44; color:white">Get Started</a>
           </p>
       </div>
   </div>
