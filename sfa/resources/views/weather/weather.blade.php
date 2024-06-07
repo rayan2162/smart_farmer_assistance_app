@@ -6,7 +6,12 @@
 
 
 @section('carousel')
-    @include()
+    @component('components.hero')
+        @slot('backgroundImage', 'https://source.unsplash.com/typhoon-i9w4Uy1pU-s')
+        @slot('title', 'Stay Updated with the Latest Weather Forecasts')
+        @slot('leadText', 'Get accurate and up-to-date weather information to plan your farming activities.')
+        @slot('description', 'Our weather forecast service provides you with real-time updates on temperature, rain predictions, and more. Make informed decisions and optimize your farming operations with reliable weather data.')
+    @endcomponent
 @endsection
 
 
