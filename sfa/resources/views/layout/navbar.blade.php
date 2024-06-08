@@ -18,57 +18,37 @@
   
             <!-- Crop Dropdown -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="cropDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link text-white" href="#" id="cropDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Crop
                 </a>
-                <div class="dropdown-menu custom-dropdown" aria-labelledby="cropDropdown">
-                    <a class="dropdown-item text-white" href="#">Crop</a>
-                    <a class="dropdown-item text-white" href="#">Create</a>
-                </div>
             </li>
   
             <!-- Agroforestry Dropdown -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="agroforestryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link text-white" href="#" id="agroforestryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Agroforestry
                 </a>
-                <div class="dropdown-menu custom-dropdown" aria-labelledby="agroforestryDropdown">
-                    <a class="dropdown-item text-white" href="#">Agroforestry</a>
-                    <a class="dropdown-item text-white" href="#">Create</a>
-                </div>
             </li>
   
             <!-- Livestock Dropdown -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="livestockDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link text-white" href="#" id="livestockDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Livestock
                 </a>
-                <div class="dropdown-menu custom-dropdown" aria-labelledby="livestockDropdown">
-                    <a class="dropdown-item text-white" href="#">Livestock</a>
-                    <a class="dropdown-item text-white" href="#">Create</a>
-                </div>
             </li>
   
             <!-- Silo Dropdown -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="siloDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link text-white" href="#" id="siloDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Silo
                 </a>
-                <div class="dropdown-menu custom-dropdown" aria-labelledby="siloDropdown">
-                    <a class="dropdown-item text-white" href="#">Silo</a>
-                    <a class="dropdown-item text-white" href="#">Create</a>
-                </div>
             </li>
   
             <!-- Equipment Dropdown -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="equipmentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link text-white" href="#" id="equipmentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Equipment
                 </a>
-                <div class="dropdown-menu custom-dropdown" aria-labelledby="equipmentDropdown">
-                    <a class="dropdown-item text-white" href="#">Equipment</a>
-                    <a class="dropdown-item text-white" href="#">Create</a>
-                </div>
             </li>
   
             <li class="nav-item">

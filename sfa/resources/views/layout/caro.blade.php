@@ -13,8 +13,7 @@
 
       {{-- 1st --}}
       <div class="carousel-item active">
-        {{-- <img src="https://source.unsplash.com/green-leafed-plant-under-the-blue-sky-zbX449WfMss" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px); -webkit-filter: blur(1.8px);" alt="Maximize Your Crop Yield"> --}}
-          <img src="https://source.unsplash.com/green-wheat-field-during-daytime-piNf3C4TViA" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px); -webkit-filter: blur(1.8px);" alt="Maximize Your Crop Yield">
+          {{-- <img src="https://source.unsplash.com/green-wheat-field-during-daytime-piNf3C4TViA/1600x900" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px);" alt="Maximize Your Crop Yield"> --}}
         <div class="carousel-caption ">
           <h2>Maximize Your Crop Yield</h2>
           <p> Increase your farm's productivity with our comprehensive crop management solutions. </p> 
@@ -25,7 +24,7 @@
       
       {{-- 2nd --}}
       <div class="carousel-item">
-        <img src="https://source.unsplash.com/green-plants-on-green-grass-field-during-daytime-vQLFylt4SUs" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px); -webkit-filter: blur(1.8px);" alt="Second slide">
+        <img src="https://source.unsplash.com/green-plants-on-green-grass-field-during-daytime-vQLFylt4SUs" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px);" alt="Second slide">
         <div class="carousel-caption ">
             <h2>Enhance Orchard & Agroforestry Operations</h2>
             <p> Elevate your orchard and agroforestry management with our specialized solutions tailored to tree-based agriculture. </p> 
@@ -36,8 +35,8 @@
         
         {{-- 3rd --}}
         <div class="carousel-item">
-          {{-- <img src="https://source.unsplash.com/a-conveyor-belt-in-a-warehouse-filled-with-bags-Ru9Uf4G0Gx0" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px); -webkit-filter: blur(1.8px);" alt="Second slide"> --}}
-          <img src="https://source.unsplash.com//pile-of-gray-sacks-7QScg8wbu74" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px); -webkit-filter: blur(1.8px);" alt="Second slide">
+          {{-- <img src="https://source.unsplash.com/a-conveyor-belt-in-a-warehouse-filled-with-bags-Ru9Uf4G0Gx0" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px);" alt="Second slide"> --}}
+          <img src="https://source.unsplash.com//pile-of-gray-sacks-7QScg8wbu74" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px);" alt="Second slide">
           <div class="carousel-caption ">
               <h2>Efficient Crop Storage Solutions</h2>
               <p>  Streamline your crop management process with our advanced silo storage solutions.</p> 
@@ -48,7 +47,7 @@
 
       {{-- 4th --}}
       <div class="carousel-item">
-        <img src="https://source.unsplash.com/three-black-and-white-cows-walking-along-a-grass-field-wfPRkf7kydE" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px); -webkit-filter: blur(1.8px);" alt="Second slide">
+        <img src="https://source.unsplash.com/three-black-and-white-cows-walking-along-a-grass-field-wfPRkf7kydE" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px);" alt="Second slide">
         <div class="carousel-caption ">
             <h2>Optimize Livestock Health and Performance</h2>
             <p>Enhance the well-being and productivity of your livestock with our comprehensive management solutions. </p> 
@@ -72,7 +71,7 @@
         
         {{-- 6th --}}
       <div class="carousel-item">
-        <img src="https://source.unsplash.com/green-grass-field-under-blue-sky-and-white-clouds-during-daytime-sgxF-r318UE" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px); -webkit-filter: blur(1.8px);" alt="Second slide">
+        <img src="https://source.unsplash.com/green-grass-field-under-blue-sky-and-white-clouds-during-daytime-sgxF-r318UE" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px);" alt="Second slide">
         <div class="carousel-caption ">
             <h2>Stay Ahead with Accurate Weather Forecasts</h2>
             <p> Make informed decisions for your farm with our reliable weather news service.</p> 
@@ -86,7 +85,7 @@
       <div class="carousel-item">
         {{-- <img src="https://source.unsplash.com/woman-in-pink-long-sleeve-shirt-wearing-black-sunglasses-FDzh1--azLM" class="d-block w-100" style="max-height: 80vh; object-fit: cover; filter: blur(1.7px); -webkit-filter: blur(1.7px);" alt="Second slide">
         <div class="carousel-caption "> --}}
-        <img src="https://source.unsplash.com/man-in-gray-hoodie-and-black-pants-holding-brown-cardboard-box-xDwEa2kaeJA" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px); -webkit-filter: blur(1.8px);" alt="Second slide">
+        <img src="https://source.unsplash.com/man-in-gray-hoodie-and-black-pants-holding-brown-cardboard-box-xDwEa2kaeJA" class="d-block w-100" style="max-height: 80vh; object-fit: cover;  filter: blur(1.8px);" alt="Second slide">
         <div class="carousel-caption ">
             <h2> Enhance Your Farming Skills</h2>
             <p> Elevate your farming expertise with our comprehensive training programs and workshops. </p> 
