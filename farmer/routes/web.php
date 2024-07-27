@@ -36,3 +36,6 @@ Route::get('/notice', function () {
 Route::get('/silo', function () {
     return view('silo.siloPage');
 });
+Route::get('/weather', function () {
+    return view('weather.weatherPage');
+});
