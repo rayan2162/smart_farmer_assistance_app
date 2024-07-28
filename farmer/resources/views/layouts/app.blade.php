@@ -141,6 +141,13 @@
                                                 Equipment
                                             </a>
                                         </li>
+                                        
+                                        <!-- Weather Dropdown -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link text-white" href="#" id="weatherDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Weather
+                                            </a>
+                                        </li>
 
                                 {{-- Navbar link end --}}
 
