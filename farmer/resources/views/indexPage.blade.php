@@ -14,3 +14,7 @@
 @section('jumbotron')
     @include('layouts.jumbo')
 @endsection
+
+@section('footer')
+    @include('layouts.footerLongPage')
+@endsection
