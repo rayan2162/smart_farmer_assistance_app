@@ -3,7 +3,7 @@
           <h1 class="display-5 text-white">Connect with us</h1>
           <p class="lead text-white">Want to learn? Any inquiries? Feel free to send email to learn more. </p>
           <hr class="my-4 text-white">
-              <a class="btn btn-lg" href="" role="button" style="background:#4B6F44; color:white">Send an Email</a>
+          <a class="btn btn-lg" href="/send-email" role="button" style="background:#4B6F44; color:white">Send an Email</a>
           </p>
       </div>
   </div>
