@@ -25,7 +25,7 @@
                 <form action="{{ route('weather.fetch') }}" method="POST">
                     @csrf
                     <div class="form-group">
-                        <label for="date">Date</label>
+                        <label style="color: white" for="date">Date</label>
                         <input type="date" class="form-control" id="date" name="date" min="{{ now()->format('Y-m-d') }}" required>
                     </div>
                     <button type="submit" class="btn" style="background-color:#4B6F44; color: white;">Get Weather</button>
