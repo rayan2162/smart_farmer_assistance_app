@@ -45,9 +45,6 @@
     @endcomponent
 @endsection
 
-
-
-@section('content')
-
-
+@section('footer')
+    @include('layouts.footerLongPage')
 @endsection

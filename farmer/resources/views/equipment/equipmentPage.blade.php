@@ -18,3 +18,7 @@
 @section('content')
     @include('./demoText')
 @endsection
+
+@section('footer')
+    @include('layouts.footerLongPage')
+@endsection

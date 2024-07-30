@@ -59,6 +59,6 @@
 
 @endsection
 
-{{-- @section('footer')
-    @include('')
-@endsection --}}
+@section('footer')
+    @include('layouts.footerLongPage')
+@endsection
