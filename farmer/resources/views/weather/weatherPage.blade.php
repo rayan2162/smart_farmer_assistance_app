@@ -46,5 +46,5 @@
 @endsection
 
 @section('footer')
-    @include('layouts.footerLongPage')
+    @include('layouts.footerShortPage')
 @endsection
