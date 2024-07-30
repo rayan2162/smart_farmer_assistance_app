@@ -57,3 +57,11 @@ Route::get('/send-email', [MailController::class, 'create']);
 Route::post('/send-email', [MailController::class, 'send']);
 
 
+// Crop Featuer Complete Routes
+use App\Http\Controllers\CropController;
+
+Route::resource('crop', CropController::class);
+
+Route::get('crop/{id}/edit', [CropController::class, 'edit'])->name('crop.edit');
+Route::put('crop/{id}', [CropController::class, 'update'])->name('crop.update');
+
