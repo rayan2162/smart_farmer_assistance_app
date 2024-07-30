@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\WeatherController;
+
 
 Auth::routes();
 
@@ -36,6 +38,8 @@ Route::get('/notice', function () {
 Route::get('/silo', function () {
     return view('silo.siloPage');
 });
-Route::get('/weather', function () {
-    return view('weather.weatherPage');
-});
+
+// Weather Page complete routes
+Route::get('/weather', [WeatherController::class, 'show'])->name('weather.show');
+
+Route::post('/get_weather', [WeatherController::class, 'fetch'])->name('weather.fetch');
