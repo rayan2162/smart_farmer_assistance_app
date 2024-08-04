@@ -87,7 +87,7 @@
                         <!-- Authentication Links -->
                         @guest
 
-                        {{-- Not Loged in --}}
+                        {{-- Not Logged in --}}
                         @if (Route::has('login'))
                         <li class="nav-item">
                             <a class="btn" href="{{ route('login') }}" style="color: #4B6F44; background:white; font-weight:bolder">{{ __('Login') }}</a>
@@ -105,49 +105,34 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="#">Notice</a>
+                                        <a class="nav-link text-white" href="{{ url('/home') }}">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="{{ url('/user-notice') }}">Notice</a>
                                     </li>
 
-                                    <!-- Crop Dropdown -->
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-white" href="#" id="cropDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Crop
-                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="{{ url('/crop') }}">Crop</a>
                                     </li>
 
-                                    <!-- Agroforestry Dropdown -->
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-white" href="#" id="agroforestryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Agroforestry
-                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="{{ url('/agroforestry') }}">Agroforestry</a>
                                     </li>
 
-                                    <!-- Livestock Dropdown -->
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-white" href="#" id="livestockDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Livestock
-                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="{{ url('/livestock') }}">Livestock</a>
                                     </li>
 
-                                    <!-- Silo Dropdown -->
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-white" href="#" id="siloDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Silo
-                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="{{ url('/silo') }}">Silo</a>
                                     </li>
 
-                                    <!-- Equipment Dropdown -->
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-white" href="#" id="equipmentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Equipment
-                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="{{ url('/equipment') }}">Equipment</a>
                                     </li>
 
-                                    <!-- Weather Dropdown -->
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-white" href="#" id="weatherDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Weather
-                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="{{ route('weather.show') }}">Weather</a>
                                     </li>
                                 </ul>
                             </div>
@@ -156,13 +141,16 @@
                             {{-- Admin Links --}}
                             @if(Auth::user()->isAdmin)
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Approve</a>
+                                    <a class="nav-link text-white" href="{{ route('admin.dashboard') }}">Dashboard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Users</a>
+                                    <a class="nav-link text-white" href="{{ route('admin.users') }}">Approve</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Notice</a>
+                                    <a class="nav-link text-white" href="{{ route('admin.all-users') }}">Users</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="{{ route('notice.index') }}">Notice</a>
                                 </li>
                             @endif
 
