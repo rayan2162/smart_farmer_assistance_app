@@ -45,10 +45,6 @@ Route::middleware(['auth'])->group(function () {
         return view('livestock.livestockPage');
     });
 
-    Route::get('/notice', function () {
-        return view('notice.noticePage');
-    });
-
     Route::get('/silo', function () {
         return view('silo.siloPage');
     });
@@ -64,10 +60,10 @@ Route::middleware(['auth'])->group(function () {
     Route::put('crop/{id}', [CropController::class, 'update'])->name('crop.update');
 
 // Notice Feature VIEW for user
-Route::get('/user-notice', function () {
-    $notices = DB::table('notices')->get();
+    Route::get('/user-notice', function () {
+        $notices = DB::table('notices')->get();
         return view('notice.userNotice', compact('notices'));
-});
+    });
 
 });
 
