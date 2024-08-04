@@ -68,13 +68,15 @@ Route::middleware(['auth', 'admin'])->group(function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
 
+    // Unapproved users
     Route::get('admin/users', [ApprovalController::class, 'index'])->name('admin.users');
     Route::post('admin/users/approve/{id}', [ApprovalController::class, 'approve'])->name('admin.users.approve');
 
+    // All Approved users
     Route::get('admin/all-users', [AllUserController::class, 'index'])->name('admin.all-users');
-Route::get('admin/users/{id}/edit', [AllUserController::class, 'edit'])->name('admin.users.edit');
-Route::post('admin/users/{id}', [AllUserController::class, 'update'])->name('admin.users.update');
-Route::delete('admin/users/{id}', [AllUserController::class, 'destroy'])->name('admin.users.destroy');
+    Route::get('admin/users/{id}/edit', [AllUserController::class, 'edit'])->name('admin.users.edit');
+    Route::post('admin/users/{id}', [AllUserController::class, 'update'])->name('admin.users.update');
+    Route::delete('admin/users/{id}', [AllUserController::class, 'destroy'])->name('admin.users.destroy');
 
     
 });
