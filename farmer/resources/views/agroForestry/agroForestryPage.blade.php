@@ -1,29 +1,62 @@
 @extends('layouts.app')
 
 @section('carousel')
-
     @component('components.hero')
-
-        @slot('backgroundImage', 'https://images.unsplash.com/photo-1597714026720-8f74c62310ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
-
-        @slot('title', 'Agroforestry Solutions')
-
-        @slot('leadText', 'Enhance the well-being and productivity of your livestock with our comprehensive management solutions. ')
-
-        @slot('description', 'Enhance your agroforestry with our tailored solutions for tree-based agriculture. Boost productivity and sustainability in orchards, groves, or timber stands using advanced tools and resources. Achieve long-term success with our management application. ')
+        @slot('backgroundImage', 'https://images.unsplash.com/photo-1558963235-eff20c9f7d99?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFkZHklMjBmaWVsZHxlbnwwfDB8MHx8fDI%3D')
+        @slot('title', 'Maximize your farm\'s potential ')
+        @slot('leadText', 'Increase your farm\'s productivity with our comprehensive Agro Forestry management solutions.')
+        @slot('description', 'From agro-forestry planning to harvest tracking, streamline your operations for increased productivity and profitability. Stay organized and informed and utilize resources. ')
     
         @section('heroContent')
-            @include('layouts.demoForm')
+            @include('agroforestry.agroforestryForm')
         @endsection
-
     @endcomponent
-
 @endsection
 
 
 
 @section('content')
-    @include('./demoText')
+    
+
+<table class="table mt-6" style="border: #4B6F44 solid">
+    <thead class="thead" style="background:#4B6F44; color:white; font-weight:bolder">
+        <tr>
+            {{-- <th scope="col">#</th> --}}
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Planting Date</th>
+            <th scope="col">Harvest Date</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Location</th>
+            <th scope="col">Notes</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($agroforestries as $agroforestry)
+            <tr style="border: #4B6F44 solid">
+                {{-- <th scope="row">{{ $agroforestry->id }}</th> --}}
+                <td>{{ $agroforestry->name }}</td>
+                <td>{{ $agroforestry->type }}</td>
+                <td>{{ $agroforestry->planting_date}}</td>
+                <td>{{ $agroforestry->harvest_date}}</td>
+                <td>{{ $agroforestry->quantity }}</td>
+                <td>{{ $agroforestry->location }}</td>
+                <td>{{ $agroforestry->notes }}</td>
+                <td>
+                    <a href="{{ route('agroforestry.edit', $agroforestry->id) }}" class="btn btn-sm" style="background-color: #4B6F44; color: white">Edit</a>
+                    <form action="{{ route('agroforestry.destroy', $agroforestry->id) }}" method="POST" style="display:inline;">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        @endforeach
+    </tbody>
+</table>
+
+
 @endsection
 
 @section('footer')
