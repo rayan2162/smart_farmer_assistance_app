@@ -11,6 +11,7 @@ use App\Http\Controllers\AllUserController;
 use App\Http\Controllers\WeatherController;
 use App\Http\Controllers\ApprovalController;
 use App\Http\Controllers\EquipmentController;
+use App\Http\Controllers\LivestockController;
 use App\Http\Controllers\AgroforestryController;
 
 
@@ -35,9 +36,6 @@ Route::middleware(['auth'])->group(function () {
         return view('user.dashboard');
     })->name('home');
 
-    Route::get('/livestock', function () {
-        return view('livestock.livestockPage');
-    });
 
     Route::get('/silo', function () {
         return view('silo.siloPage');
@@ -65,13 +63,22 @@ Route::middleware(['auth'])->group(function () {
     Route::put('agroforestry/{id}', [AgroforestryController::class, 'update'])->name('agroforestry.update');
     Route::delete('/agroforestry/{id}', [AgroforestryController::class, 'destroy'])->name('agroforestry.destroy');
 
-});
+    //Livestock Features Complete Routes
+    Route::resource('livestock', LivestockController::class);
+    Route::get('livestock/{id}/edit', [LivestockController::class, 'edit'])->name('livestock.edit');
+    Route::put('livestock/{id}', [LivestockController::class, 'update'])->name('livestock.update');
+    Route::delete('livestock/{id}', [LivestockController::class, 'destroy'])->name('livestock.destroy');
+    
+
 
 //Equipment Features Complete Routes
-    Route::resource('equipment', EquipmentController::class);
-    Route::get('equipment/{id}/edit', [EquipmentController::class, 'edit'])->name('equipment.edit');
-    Route::put('equipment/{id}', [EquipmentController::class, 'update'])->name('equipment.update');
-    Route::delete('equipment/{id}', [EquipmentController::class, 'destroy'])->name('equipment.destroy');
+Route::resource('equipment', EquipmentController::class);
+Route::get('equipment/{id}/edit', [EquipmentController::class, 'edit'])->name('equipment.edit');
+Route::put('equipment/{id}', [EquipmentController::class, 'update'])->name('equipment.update');
+Route::delete('equipment/{id}', [EquipmentController::class, 'destroy'])->name('equipment.destroy');
+
+});
+
 
 
 
