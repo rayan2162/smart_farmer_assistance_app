@@ -40,7 +40,7 @@ This application is built using **Laravel 10**, **Bootstrap 4**, **HTML/CSS**, a
 
 ## Setup & Installation
 
-For detailed **instructions** on setting up and installing the Laravel code for the Smart Farmer Assistant App, please go to the [Instruction Guide](https://github.com/rayan2162/smart_farmer_assistance_app/blob/main/README.md).
+For detailed **instructions** on setting up and installing the Laravel code for the Smart Farmer Assistant App, please go to the [Instruction Guide](https://github.com/rayan2162/smart_farmer_assistance_app/blob/main/farmer/Readme.md).
 
 ## Usage
 
