@@ -34,10 +34,6 @@ Route::middleware(['auth'])->group(function () {
         return view('user.dashboard');
     })->name('home');
 
-    Route::get('/equipment', function () {
-        return view('equipment.equipmentPage');
-    });
-
     Route::get('/livestock', function () {
         return view('livestock.livestockPage');
     });
@@ -69,6 +65,13 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/agroforestry/{id}', [AgroforestryController::class, 'destroy'])->name('agroforestry.destroy');
 
 });
+
+//Equipment Features Complete Routes
+    Route::resource('equipment', EquipmentController::class);
+    Route::get('equipment/{id}/edit', [EquipmentController::class, 'edit'])->name('equipment.edit');
+    Route::put('equipment/{id}', [EquipmentController::class, 'update'])->name('equipment.update');
+    Route::delete('equipment/{id}', [EquipmentController::class, 'destroy'])->name('equipment.destroy');
+
 
 
 // Admin
