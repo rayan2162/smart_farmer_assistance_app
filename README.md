@@ -1,7 +1,3 @@
-Here’s an updated version of your README file incorporating your initial draft and the required link for setup & installation:
-
----
-
 # Smart Farmer Assistant App
 
 The **Smart Farmer Assistant App** is a web application designed to help farmers and administrators manage farming activities. It offers features related to crops, agroforestry, livestock, silos, and equipment. There are two types of users in the system: regular users (farmers) and admins.
@@ -55,7 +51,3 @@ For detailed **instructions** on setting up and installing the Laravel code for 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-This version includes the correct link for the setup & installation guide and highlights the steps needed for manual admin assignment.
