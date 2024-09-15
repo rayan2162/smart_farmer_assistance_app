@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\CropController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\SiloController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\AllUserController;
 use App\Http\Controllers\WeatherController;
@@ -35,12 +36,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/home', function () {
         return view('user.dashboard');
     })->name('home');
-
-
-    Route::get('/silo', function () {
-        return view('silo.siloPage');
-    });
-
     
 // Weather Features Complete Routes
     Route::get('/weather', [WeatherController::class, 'show'])->name('weather.show');
@@ -63,19 +58,25 @@ Route::middleware(['auth'])->group(function () {
     Route::put('agroforestry/{id}', [AgroforestryController::class, 'update'])->name('agroforestry.update');
     Route::delete('/agroforestry/{id}', [AgroforestryController::class, 'destroy'])->name('agroforestry.destroy');
 
-    //Livestock Features Complete Routes
+//Livestock Features Complete Routes
     Route::resource('livestock', LivestockController::class);
     Route::get('livestock/{id}/edit', [LivestockController::class, 'edit'])->name('livestock.edit');
     Route::put('livestock/{id}', [LivestockController::class, 'update'])->name('livestock.update');
     Route::delete('livestock/{id}', [LivestockController::class, 'destroy'])->name('livestock.destroy');
     
 
+//Silo Features Complete Routes
+    Route::resource('silo', SiloController::class);
+    Route::get('silo/{id}/edit', [SiloController::class, 'edit'])->name('silo.edit');
+    Route::put('silo/{id}', [SiloController::class, 'update'])->name('silo.update');
+    Route::delete('silo/{id}', [SiloController::class, 'destroy'])->name('silo.destroy');
+
 
 //Equipment Features Complete Routes
-Route::resource('equipment', EquipmentController::class);
-Route::get('equipment/{id}/edit', [EquipmentController::class, 'edit'])->name('equipment.edit');
-Route::put('equipment/{id}', [EquipmentController::class, 'update'])->name('equipment.update');
-Route::delete('equipment/{id}', [EquipmentController::class, 'destroy'])->name('equipment.destroy');
+    Route::resource('equipment', EquipmentController::class);
+    Route::get('equipment/{id}/edit', [EquipmentController::class, 'edit'])->name('equipment.edit');
+    Route::put('equipment/{id}', [EquipmentController::class, 'update'])->name('equipment.update');
+    Route::delete('equipment/{id}', [EquipmentController::class, 'destroy'])->name('equipment.destroy');
 
 });
 
