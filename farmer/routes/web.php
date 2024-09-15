@@ -1,8 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\DB;
 
 use App\Http\Controllers\CropController;
 use App\Http\Controllers\MailController;
@@ -10,6 +10,7 @@ use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\AllUserController;
 use App\Http\Controllers\WeatherController;
 use App\Http\Controllers\ApprovalController;
+use App\Http\Controllers\AgroforestryController;
 
 
 Auth::routes();
@@ -32,10 +33,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/home', function () {
         return view('user.dashboard');
     })->name('home');
-
-    Route::get('/agroforestry', function () {
-        return view('agroforestry.agroForestryPage');
-    });
 
     Route::get('/equipment', function () {
         return view('equipment.equipmentPage');
@@ -64,6 +61,12 @@ Route::middleware(['auth'])->group(function () {
         $notices = DB::table('notices')->get();
         return view('notice.userNotice', compact('notices'));
     });
+
+//AgroForestry Features Complete Routes
+    Route::resource('agroforestry', AgroforestryController::class);
+    Route::get('agroforestry/{id}/edit', [AgroforestryController::class, 'edit'])->name('agroforestry.edit');
+    Route::put('agroforestry/{id}', [AgroforestryController::class, 'update'])->name('agroforestry.update');
+    Route::delete('/agroforestry/{id}', [AgroforestryController::class, 'destroy'])->name('agroforestry.destroy');
 
 });
 
