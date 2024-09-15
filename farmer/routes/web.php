@@ -10,6 +10,7 @@ use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\AllUserController;
 use App\Http\Controllers\WeatherController;
 use App\Http\Controllers\ApprovalController;
+use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\AgroforestryController;
 
 
